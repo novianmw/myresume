@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio CV | Novian MW</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/solid.css">
+<!-- BORDER GARIS UNTUK MENENTUKAN POSISI   -->
+    <!-- <style>
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body class="font-work bg-black">  
+
+    <!-- BAGIAN NAV -->
+    <header class="sticky z-10 w-full mx-auto p-5 md:py-5 md:px-10 flex text-white">
+        <div class="relative w-32 py-3 text-center">
+            <a href="index.html" class="text-justify mr-3 text-lg md:text-xl lg:text-2xl hover:opacity-75 transition-opacity">Novian</a>
+            <div class="hidden md:flex">
+                <i class="text-orange-400 absolute bottom-1 right-3 fa-solid fa-location-arrow fa-flip-horizontal fa-xl"></i>
+            </div>
+        </div>
+        <nav class="py-3 w-full text-center hidden md:flex justify-around -space-x-52">
+            <a href="about.html">About</a>
+            <a href="skill.html">Skill</a>
+            <a href="hobby.html">Hobby</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+        <div class="absolute md:flex hidden top-5 right-2">
+            <h3 class="p-2 border rounded-lg border-white">
+                <i class="text-green-400 px-2 fa-xl fa-brands fa-whatsapp"></i>
+                <span class="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent text-2xl px-2">Chat Me</span>
+            </h3>
+        </div>
+        <!-- MENU HAMBURGER -->
+        <div class="md:hidden inline-block py-5 absolute right-8 text-right">
+            <button id="hamburgerMenu" class="">
+                <i class="fa-solid fa-bars-staggered fa-xl fa-rotate-180"></i>
+            </button>
+            <button id="closeMenu" class="hidden absolute -top-3 right-1 text-right text-2xl border-b-2 p-5 w-full">
+                X
+            </button>
+        </div>
+        <!-- BAGIAN ISI HAMBURGER [Ongoing] -->
+        <div id="overLay" class="hidden mt-24 fixed inset-0 bg-black bg-opacity-50"></div>
+            <div id="isiHamburger" class="hidden absolute top-24 border-t border-b border-b-white bg-black w-full left-0">
+                <a href="about.html" class="block border-b-2 px-5 py-3 w-full">About</a>
+                <a href="skill.html" class="block border-b-2 px-5 py-3 w-full">Skill</a>
+                <a href="hobby.html" class="block border-b-2 px-5 py-3 w-full">Hobby</a>
+                <a href="portfolio.html" class="block border-b-2 px-5 py-3 w-full">Portfolio</a>
+                <div class="py-3">
+                    <button class="w-full mt-5 py-3 border rounded-lg border-white">
+                        <i class="text-green-400 px-2 fa-xl fa-brands fa-whatsapp"></i>
+                        <span class="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent text-2xl px-2">Chat Me</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BAGIAN PENGENALAN PART 1 -->
+    <section class="w-full mx-auto px-10 text-white">
+        <div class="absolute top-32 right-10 z-10 hidden md:flex">
+            <i class="bg-gradient-to-r from-gray-900 to-white bg-clip-text text-transparent fa-5x fa-solid fa-code"></i>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="text-left p-3">
+                <h1 class="text-6xl py-2">Hi,</h1>
+                <h1 class="text-6xl py-2">I'm <span class="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">Novian</span></h1>
+                <h3 class="text-3xl py-5">Front End Developer</h3>
+            </div>
+            <div class="w-full mx-auto relative md:flex hidden">
+                <img class="absolute w-fit left-0 -top-20 lg:left-0 lg:-top-56" src="images/cover img.jpg" alt="cover image">
+            </div>
+            <div class="text-left p-3 text-white">
+                <h3 class="text-lg text-left text-orange-500 py-2">Expert on</h3>
+                <h1 class="text-4xl py-2">Based in Indonesia.<span> I'm a Developer for making a website more interactive.</h1></span> 
+                <p class="text-lg text-left text-gray-500 py-2">Hey, if you looking for website design to build your brand and grow up your business? let's make a point</p>
+            </div>
+        </div>
+        <div class="flex my-5 md:justify-start justify-center">
+            <a href="" class="mx-3 p-3 bg-gradient-to-r from-red-500 to-orange-500 w-48 rounded-lg"><i class="mr-4 align-middle fa-lg fa-solid fa-person-circle-check "></i>Hire Me</a>
+        </div>
+        <div class="flex my-5 md:justify-start justify-center md:hidden">
+            <a href="" class="mx-3 p-3 bg-gradient-to-r from-red-500 to-orange-500 w-48 rounded-lg">Download CV<i class="ml-4 align-middle fa-lg fa-solid fa-download"></i></a>
+        </div>
+    </section>
+
+    <!-- UNTUK BAGIAN LOGO SOCIAL MEDIA, CONTACT, INFO -->
+    <section class="w-full mx-auto py-5 px-10 text-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex md:justify-start justify-center space-x-10 text-left p-3">
+                <div class="block fa-2x">
+                    <a href="">
+                        <i class="bg-gradient-to-tl from-purple-800 to-red-600 bg-clip-text text-transparent fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="block fa-2x">
+                    <a href="">
+                        <i class="text-blue-700 fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="block fa-2x">
+                    <a href="">
+                        <i class="text-cyan-500 fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="block fa-2x">
+                    <a target="_blank" href="https://github.com/novianmw">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full mx-auto hidden md:flex">
+                <div class="z-10 p-3 text-left text-lg text-orange-400">
+                    <a href="">Download CV<i class="ml-3 fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
